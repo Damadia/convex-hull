@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://di2juxlovfgwo"]
+
+[ext_resource type="Texture2D" uid="uid://bewdxsbf5yhah" path="res://gfx/convex_hull_bg.jpg" id="1_o5qli"]
+[ext_resource type="Theme" uid="uid://bb6b8aqlj778m" path="res://themes/ui_simple_style.tres" id="2_0wfyh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8f5x1"]
+bg_color = Color(0.14117648, 0.14117648, 0.14117648, 0.2901961)
+
+[node name="Main_menu" type="Control" unique_id=377027032]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1198911881]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_o5qli")
+
+[node name="Panel" type="Panel" parent="." unique_id=867471936]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8f5x1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=651657004]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.5
+offset_top = -20.0
+offset_right = 35.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="begin" type="Button" parent="VBoxContainer" unique_id=1275422254]
+layout_mode = 2
+theme = ExtResource("2_0wfyh")
+text = "INICIAR "
+
+[node name="end_program" type="Button" parent="VBoxContainer" unique_id=1651523692]
+layout_mode = 2
+theme = ExtResource("2_0wfyh")
+text = "CERRAR PROGRAMA"
