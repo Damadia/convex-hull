@@ -2,32 +2,33 @@
 
 [ext_resource type="FontFile" uid="uid://drscawcqvumbu" path="res://fonts/NicemilkDEMO.otf" id="1_wh055"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ro6cy"]
-bg_color = Color(0.21387383, 0.31469738, 0.8129522, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hhb2b"]
+bg_color = Color(0.21752924, 0.43547356, 0.7283484, 0.67058825)
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6yc4b"]
-bg_color = Color(0.14930463, 0.655553, 0.8169515, 1)
-expand_margin_left = 10.0
-expand_margin_top = 10.0
-expand_margin_right = 10.0
-expand_margin_bottom = 10.0
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ir2lu"]
+bg_color = Color(0.16197926, 0.6225445, 0.9390501, 1)
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+shadow_color = Color(0.99229425, 0.9259012, 0.91991365, 0.6)
+shadow_size = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owg1f"]
-bg_color = Color(0.0033695134, 0.13243702, 0.25497732, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g2kp0"]
+bg_color = Color(0.1478369, 0.41465065, 0.8297036, 1)
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
 
 [resource]
-<<<<<<< HEAD
+Button/constants/outline_size = 4
 Button/font_sizes/font_size = 64
-Button/fonts/font = null
-=======
-Button/font_sizes/font_size = 96
 Button/fonts/font = ExtResource("1_wh055")
-Button/styles/hover = SubResource("StyleBoxFlat_ro6cy")
-Button/styles/normal = SubResource("StyleBoxFlat_6yc4b")
-Button/styles/pressed = SubResource("StyleBoxFlat_owg1f")
->>>>>>> 7b5efb295178539fa57ec029c7ebb52e0a6a48ab
+Button/styles/hover = SubResource("StyleBoxFlat_hhb2b")
+Button/styles/normal = SubResource("StyleBoxFlat_ir2lu")
+Button/styles/pressed = SubResource("StyleBoxFlat_g2kp0")

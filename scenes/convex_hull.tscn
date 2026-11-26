@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://du0d6wu4bkmdv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8f5x1"]
+bg_color = Color(0.17561546, 0.70572263, 0.97691363, 1)
+
+[node name="Plane2D" type="CanvasLayer" unique_id=1350334366]
+layer = 0
+
+[node name="Settings_hull" type="CanvasLayer" parent="." unique_id=1444125]
+layer = 5
+
+[node name="UI_info" type="CanvasLayer" parent="." unique_id=1208511532]
+layer = 2
+
+[node name="BG" type="Panel" parent="." unique_id=1067847474]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8f5x1")
+
+[node name="Set_points" type="Node" parent="." unique_id=977248449]
+
+[node name="Marker2D" type="Marker2D" parent="Set_points" unique_id=2003793864]
+position = Vector2(353, 249)
+gizmo_extents = 185.4

@@ -36,7 +36,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f0i4t"]
 _data = {
 &"RESET": SubResource("Animation_kg4ax"),
-&"fade_in": SubResource("Animation_rerct")
+&"fade_out": SubResource("Animation_rerct")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6yc4b"]
