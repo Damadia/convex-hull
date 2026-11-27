@@ -5,7 +5,7 @@ signal process_change
 
 var scene_name : String
 var packed_scene : PackedScene
-var transition_manager : PackedScene
+var transition_manager : PackedScene = preload("res://scenes/transition.tscn")
 var process : Array = []
 
 func _ready() -> void:
@@ -24,11 +24,22 @@ func start_load(scenename : String) -> void:
 	if res != OK:
 		printerr("Err, scene_name %s not found", %scene_name)
 		return
-		
-	set_up_with_transition	
+
 	set_process(true)
 	
 func _process(delta: float) -> void:
-	ResourceLoader.load_threaded_request()
+	var res_scene = ResourceLoader.load_threaded_get_status(scene_name, process)
+	process_change.emit(process[0])
+	match res_scene:
+		ResourceLoader.THREAD_LOAD_LOADED:
+			packed_scene = ResourceLoader.load_threaded_get(scene_name)
+			var trans = transition_manager.
+			get_tree().change_scene_to_packed(packed_scene)
+		ResourceLoader.THREAD_LOAD_INVALID_RESOURCE or ResourceLoader.THREAD_LOAD_INVALID_RESOURCE:
+			printerr("Error to change to another scene\n")
+			set_process(false)
+			return
+			
+	
 	
 	
